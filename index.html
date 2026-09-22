@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff1f6">
+<title>Two Years of Us — Bubu ❤️</title>
+<style>
+:root{--pink:#ec5b8d;--deep:#542238;--soft:#fff1f6;--line:#f3c2d4;--muted:#765362}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(135deg,#fff8fb,#fff0f5);color:var(--deep)}
+body{overflow-x:hidden}
+.page{min-height:100svh;display:none;padding:28px 18px 92px;align-items:center;justify-content:center}
+.page.active{display:flex;animation:in .45s ease both}
+@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.card{width:min(760px,100%);text-align:center}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:#b34870}
+h1{font-size:clamp(42px,11vw,82px);line-height:.98;margin:14px 0 18px;letter-spacing:-.04em}
+h2{font-size:clamp(29px,7vw,48px);line-height:1.05;margin:10px 0 16px;letter-spacing:-.025em}
+p{font-size:18px;line-height:1.65;color:var(--muted);margin:10px auto;max-width:650px}
+.lead{font-size:20px}
+.btn{appearance:none;border:0;border-radius:999px;background:var(--pink);color:#fff;padding:15px 24px;font-size:16px;font-weight:900;cursor:pointer;margin:7px;box-shadow:0 12px 28px #ec5b8d38;min-height:50px}
+.btn.secondary{background:#fff;color:#a33e66;border:1px solid var(--line);box-shadow:none}
+.btn:focus-visible{outline:3px solid #7d3150;outline-offset:3px}
+.photo-single{margin:22px auto;max-width:640px;border-radius:26px;overflow:hidden;box-shadow:0 18px 50px #7a284326;background:#fff}
+.photo-single img{display:block;width:100%;max-height:70svh;object-fit:cover}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px auto;max-width:680px}
+.photo-grid figure{margin:0;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px #7a284315}
+.photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo-grid figcaption{padding:9px 10px 12px;font-size:13px;color:#8a5668}
+.timeline{text-align:left;margin:25px auto;max-width:620px}
+.event{border-left:4px solid var(--pink);background:#fff;border-radius:0 18px 18px 0;padding:16px 18px;margin:12px 0;box-shadow:0 8px 24px #7a284312}
+.event b{display:block;color:#a33e66;margin-bottom:5px}
+.bubu{font-size:42px;letter-spacing:.05em;margin:4px 0}
+.character-row{display:flex;justify-content:center;gap:12px;align-items:center;margin:12px 0;font-size:15px;color:#8a5668}
+.character{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+#questionButtons{min-height:210px;position:relative;display:flex;align-items:center;justify-content:center;gap:12px;overflow:visible}
+#yes{transform-origin:center;transition:transform .28s ease}
+#no{transition:transform .28s ease}
+.answer-note{height:30px;color:#a33e66;font-weight:800}
+.final-photo{border-radius:28px;box-shadow:0 20px 60px #7a284330}
+.final-heart{font-size:86px;line-height:1;animation:pulse 1s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.1)}}
+.nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:18px}
+.progress{position:fixed;left:50%;bottom:15px;transform:translateX(-50%);display:flex;gap:7px;padding:8px 11px;border-radius:999px;background:#ffffffdf;border:1px solid #f4cad8;backdrop-filter:blur(8px);z-index:30}
+.dot{width:7px;height:7px;border-radius:50%;background:#e8b4c8;border:0;padding:0;cursor:pointer}
+.dot.on{background:var(--pink);transform:scale(1.25)}
+.heart{position:fixed;pointer-events:none;font-size:22px;z-index:50;animation:float 1.6s ease-out forwards}
+@keyframes float{0%{opacity:1;transform:translate(0,0) scale(.7)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(1.35)}}
+@media(max-width:520px){.page{padding-left:14px;padding-right:14px}.photo-grid{gap:9px}p{font-size:16px}.lead{font-size:18px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<section class="page active" data-title="Start">
+<div class="card">
+<div class="bubu">🐻‍❄️ 💕 🐼</div>
+<div class="eyebrow">For my Bubu</div>
+<h1>Two Years<br>of Us ❤️</h1>
+<p class="lead">A little journey through the story that started with a Java trainer, a tiny crush… and one very important YES.</p>
+<div class="photo-grid">
+<figure><img src="images/bubu_dudu1.jpg" alt="Bubu and Dudu"></figure>
+<figure><img src="images/bubu_dudu2.jpg" alt="Bubu and Dudu"></figure>
+</div>
+<div class="character-row"><span class="character">🐻 Bubu</span><span>💕</span><span class="character">🐼 Dudu</span></div>
+<button class="btn" data-next>Let's relive it ✨</button>
+</div>
+</section>
+
+<section class="page" data-title="The beginning">
+<div class="card">
+<div class="eyebrow">Chapter 01 · The beginning 👀</div>
+<h2>The Java trainer & his little crush 😏</h2>
+<p>You were my junior at the office, and I was your Java trainer.</p>
+<p>Somewhere between those trainings, I started noticing you a little more than I probably should have.</p>
+<p>I had a little crush on you… so I kept finding reasons to talk to you, even when you seemed barely interested. 😂</p>
+<div class="photo-grid">
+<figure><img src="images/photo1.jpg" alt="Early photo together"><figcaption>Where our story was quietly beginning…</figcaption></figure>
+<figure><img src="images/photo2.jpg" alt="Early memories"><figcaption>Before we knew what was coming ❤️</figcaption></figure>
+</div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>And then… 💕</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Every day">
+<div class="card">
+<div class="eyebrow">Chapter 02 · Getting close 💬</div>
+<h2>We started talking every day</h2>
+<p>We got close by chatting every day.</p>
+<p>I started dropping you home on my bike, and those ordinary rides quietly became some of my favourite parts of the day. 🏍️❤️</p>
+<div class="photo-single"><img src="images/photo3.jpg" alt="Bike memory"></div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>Our first outing 🍽️</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Our first outing">
+<div class="card">
+<div class="eyebrow">Chapter 03 · Our first outing 🥹</div>
+<h2>LYF by Soul Garden Bistro</h2>
+<p>Then came our first proper outing — lunch at <b>LYF by Soul Garden Bistro</b>.</p>
+<p>It was such a simple day, but somehow it became one of those memories that stayed with me.</p>
+<p>The place. The travel. The bike ride. The conversations. Just being with you.</p>
+<p><b>Even today, I can still see that day in my mind.</b> ❤️</p>
+<div class="photo-single"><img src="images/photo3.jpg" alt="Bike ride memory"></div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>Then came Coorg 🌿</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Coorg">
+<div class="card">
+<div class="eyebrow">Chapter 04 · Coorg 🌿</div>
+<h2>Coorg changed something</h2>
+<p>Then came our annual outing to Coorg.</p>
+<p>We spoke for a couple of hours each day, and those conversations became some of the most beautiful memories of that time.</p>
+<p>I think that was the moment you started liking me a little more too. ❤️</p>
+<div class="photo-grid">
+<figure><img src="images/photo4.jpg" alt="Coorg memory"><figcaption>Coorg 🌿</figcaption></figure>
+<figure><img src="images/photo5.jpg" alt="Coorg memory"><figcaption>One of my favourite chapters</figcaption></figure>
+</div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>Five minutes 🚉</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Five minutes">
+<div class="card">
+<div class="eyebrow">Chapter 05 · Five minutes 🚉</div>
+<h2>Five minutes was enough</h2>
+<p>Then you moved to another location.</p>
+<p>Honestly… I was shattered.</p>
+<p>But somehow, we still met at the railway station sometimes.</p>
+<p><b>Five minutes.</b> That was all it took to make my day.</p>
+<p>I would wait just for those five minutes — just to see you, talk to you and be around you.</p>
+<p>Because whenever I was with you, <b>time was never on our side.</b> 🥹</p>
+<div class="photo-grid">
+<figure><img src="images/photo9.jpg" alt="Walking together"><figcaption>Little moments became everything</figcaption></figure>
+<figure><img src="images/photo10.jpg" alt="Together outdoors"><figcaption>More memories, one day at a time ❤️</figcaption></figure>
+</div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>The day everything changed ❤️</button></div>
+</div>
+</section>
+
+<section class="page" data-title="September 22">
+<div class="card">
+<div class="eyebrow">22 · 09 · 2024 ❤️</div>
+<h2>The day you said YES</h2>
+<p>Eventually, I moved to your location again.</p>
+<p>We started talking, going out and creating memories like it was the most natural thing in the world.</p>
+<p>And then came <b>September 22, 2024.</b></p>
+<p>You accepted my love.</p>
+<p>I was the happiest person on earth.</p>
+<p><b>That was the day I got the love of my life. ❤️</b></p>
+<div class="photo-single"><img src="images/photo8.jpg" alt="A special memory"></div>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button><button class="btn" data-next>Two years later… 🥹</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Two years">
+<div class="card">
+<div class="eyebrow">22 · 09 · 2026</div>
+<div class="bubu">🐻‍❄️ 💗 🐼</div>
+<h2>Two years later…</h2>
+<p>From a little crush at the office…</p>
+<p>to everyday conversations, bike rides, our first outing, Coorg, railway-station meetings and countless little memories…</p>
+<p><b>You've become such a beautiful part of my life.</b></p>
+<p>And Bubu, I have one tiny question for you… 😌</p>
+<button class="btn" data-next>Ask me… 💕</button>
+<div class="nav"><button class="btn secondary" data-prev>← Back</button></div>
+</div>
+</section>
+
+<section class="page" data-title="The question">
+<div class="card">
+<div class="eyebrow">One last question… 💌</div>
+<h2>Would you choose me again? ❤️</h2>
+<p>Two years ago, you said YES.</p>
+<p>After everything we've shared… would you say it one more time?</p>
+<div id="questionButtons">
+<button class="btn" id="yes">YES ❤️</button>
+<button class="btn secondary" id="no">NO 😏</button>
+</div>
+<div class="answer-note" id="answerNote"></div>
+<div class="nav"><button class="btn secondary" data-prev>← Wait, go back</button></div>
+</div>
+</section>
+
+<section class="page" data-title="Forever">
+<div class="card">
+<div class="final-heart">💖</div>
+<div class="eyebrow">22 · 09 · 2026</div>
+<h1>I knew you'd say YES! 🥹</h1>
+<p>Two years ago, you said YES to me.</p>
+<p>Today, I'd choose you all over again.</p>
+<p><b>Happy 2nd Anniversary, Bubu. ❤️</b></p>
+<p>Thank you for being my favourite part of this journey.</p>
+<div class="photo-single final-photo"><img src="images/photo7.jpg" alt="Our favourite photo together"></div>
+<p class="lead"><b>Here's to all the memories we've made… and all the ones still waiting for us. 🫶</b></p>
+<div class="bubu">🐻‍❄️ 💕 🐼</div>
+<button class="btn secondary" id="replay">Relive our story ↺</button>
+</div>
+</section>
+
+<div class="progress" id="progress" aria-label="Story progress"></div>
+
+<script>
+(()=> {
+const pages=[...document.querySelectorAll('.page')], progress=document.getElementById('progress');
+let current=0, yesScale=1, noScale=1;
+pages.forEach((p,i)=>{const d=document.createElement('button');d.className='dot'+(i===0?' on':'');d.type='button';d.title=p.dataset.title;d.setAttribute('aria-label','Go to '+p.dataset.title);d.addEventListener('click',()=>show(i));progress.appendChild(d)});
+const dots=[...progress.children];
+function show(i){
+ current=Math.max(0,Math.min(pages.length-1,i));
+ pages.forEach((p,n)=>p.classList.toggle('active',n===current));
+ dots.forEach((d,n)=>d.classList.toggle('on',n===current));
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>show(current+1)));
+document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>show(current-1)));
+document.addEventListener('keydown',e=>{
+ if(e.key==='ArrowRight')show(current+1);
+ if(e.key==='ArrowLeft')show(current-1);
+});
+const yes=document.getElementById('yes'),no=document.getElementById('no'),note=document.getElementById('answerNote');
+function hearts(){
+ for(let i=0;i<30;i++){
+  const s=document.createElement('span');s.className='heart';s.textContent=['❤️','💕','💖','✨','🥰'][i%5];
+  s.style.left=(45+Math.random()*10)+'%';s.style.top=(40+Math.random()*15)+'%';
+  s.style.setProperty('--x',((Math.random()-.5)*620)+'px');s.style.setProperty('--y',(-80-Math.random()*420)+'px');
+  s.style.setProperty('--r',((Math.random()-.5)*90)+'deg');
+  document.body.appendChild(s);setTimeout(()=>s.remove(),1700);
+ }
+}
+no.addEventListener('click',()=>{
+ yesScale=Math.min(2.9,yesScale+.25);noScale=Math.max(.32,noScale-.15);
+ yes.style.transform=`scale(${yesScale})`;no.style.transform=`scale(${noScale})`;
+ note.textContent=yesScale>2.1?'Bubu… I think the universe is trying to help you 😂❤️':'Are you sure? 😏';
+ if(noScale<=.5)no.textContent='NO 🙈';
+});
+yes.addEventListener('click',()=>{hearts();setTimeout(()=>show(pages.length-1),350)});
+let touchX=0,touchY=0;
+document.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;touchY=e.changedTouches[0].clientY},{passive:true});
+document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.2){show(current+(dx<0?1:-1))}},{passive:true});
+document.getElementById('replay').addEventListener('click',()=>{
+ yesScale=1;noScale=1;yes.style.transform='';no.style.transform='';no.textContent='NO 😏';note.textContent='';show(0);
+});
+})();
+</script>
+</body>
+</html>
